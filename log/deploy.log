@@ -1,0 +1,4 @@
+WARNING: spit already refers to: #'clojure.core/spit in namespace: ring.util.servlet, being replaced by: #'clojure.contrib.duck-streams/spit
+2010-12-11 17:39:33.429::INFO:  Logging to STDERR via org.mortbay.log.StdErrLog
+2010-12-11 17:39:33.431::INFO:  jetty-6.1.14
+2010-12-11 17:39:33.498::INFO:  Started SocketConnector@0.0.0.0:9001

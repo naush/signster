@@ -4,7 +4,8 @@
   (:use ring.middleware.reload)
   (:use ring.middleware.stacktrace)
   (:use signster.translator)
-  (:use signster.view))
+  (:use signster.view)
+  (:gen-class))
 
 (defn view [params]
   (let [sentence (params "sentence")]
@@ -27,3 +28,5 @@
     (wrap-reload '(signster.core))
     (wrap-stacktrace)
     (wrap-params)))
+
+(defn -main [& args] (run-jetty app {:port 9001}))
